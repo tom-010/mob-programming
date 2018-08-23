@@ -25,10 +25,12 @@ def is_valid_section_header(line):
 
 # Nächste Schritte:
 # Das Problem ist, dass wir noch keine Abstraktion haben, die Sektionen beschreibt.
-# Gewollt ist, dass, sobald ein invalid Sektion-Header gegeben ist, die komplette Sektion gedroppt wird.
-# Idee als wir aufgehört haben: Einen Regex auf dem ini_string Sektionen erkennen lassen, diesen string mit dem
-# Regex splitten, überprüfen, ob er (einzige) Key in der Sektion valid ist. 
+# Gewollt ist, dass, sobald ein invalid Sektion-Header gegeben ist,
+# die komplette Sektion gedroppt wird.
+# Idee als wir aufgehört haben: Einen Regex auf dem ini_string Sektionen erkennen lassen,
+# diesen string mit dem Regex splitten, überprüfen, ob er (einzige) Key in der Sektion valid ist.
 # Falls nein: Ein continue in der for-loop
 # Falls ja: Wie oben die einzelnen lines verarbeiten
 # Achtung: TDD in kleinen Schritten!
 # www.regex101.com
+

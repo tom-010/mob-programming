@@ -69,21 +69,9 @@ def assertParse(ini_string, expected):
 def test_parse_invalid_input(test_input, expected):
     assertParse(test_input, expected)
 
-def test_emtpy_section():
-    assertParse("[]", {})
+#####################################################
 
-@pytest.mark.parametrize("test_input,expected", [
-    ("[]\na=b", {}),
-    ("""
-    []
-    a=b
-    """, {}),
-    ("[] \n a=b", {}),
-    ("[ \n a=b", {}),
-    ("] \n a=b", {}),
-])
-def test_invalid_section(test_input, expected):
-      assertParse(test_input, expected)
+
 
 
 # Empty Section
